@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/scwbanner/db" VERSION="20170220" COMMENT="XMLDB file for Moodle local/scwbanner"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_scwbanner" COMMENT="Default comment for local_scwbanner, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="banner_name" TYPE="char" LENGTH="300" NOTNULL="true" SEQUENCE="false" COMMENT="This is banner name."/>
+        <FIELD NAME="banner_company" TYPE="char" LENGTH="300" NOTNULL="true" SEQUENCE="false" COMMENT="This is company name."/>
+        <FIELD NAME="banner_contact" TYPE="char" LENGTH="300" NOTNULL="true" SEQUENCE="false" COMMENT="This is company email id"/>
+        <FIELD NAME="banner_expires_by" TYPE="int" LENGTH="11" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field is use for banner expire date."/>
+        <FIELD NAME="banner_page" TYPE="char" LENGTH="300" NOTNULL="false" SEQUENCE="false" COMMENT="This is page name like as Home page,Contact Us page."/>
+        <FIELD NAME="banner_position" TYPE="char" LENGTH="300" NOTNULL="true" DEFAULT="home" SEQUENCE="false" COMMENT="This is Banner Position."/>
+        <FIELD NAME="banner_caption" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="This banner caption. It is optional."/>
+        <FIELD NAME="banner_image" TYPE="char" LENGTH="300" NOTNULL="false" SEQUENCE="false" COMMENT="This is banner image."/>
+        <FIELD NAME="banner_url" TYPE="char" LENGTH="1000" NOTNULL="true" SEQUENCE="false" COMMENT="This is banner URL."/>
+        <FIELD NAME="banner_porder" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="1" SEQUENCE="false" COMMENT="This is Banner Preference Order."/>
+        <FIELD NAME="banner_status" TYPE="int" LENGTH="3" NOTNULL="false" SEQUENCE="false" COMMENT="This is banner status. Its hold banner is active or deactive.If 0 deactive, 1 active."/>
+        <FIELD NAME="banner_created" TYPE="int" LENGTH="13" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field show when was create banner."/>
+        <FIELD NAME="banner_modified" TYPE="int" LENGTH="13" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field show when was modify banner."/>
+        <FIELD NAME="banner_created_by" TYPE="int" LENGTH="13" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field show who were create banner."/>
+        <FIELD NAME="banner_modified_by" TYPE="int" LENGTH="13" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field show who were modify banner."/>
+        <FIELD NAME="banner_delete" TYPE="int" LENGTH="3" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field maintain which records are soft delete or active records. If 0 Active, 1 Delete"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

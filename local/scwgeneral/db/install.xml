@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/scwgeneral/db" VERSION="20170427" COMMENT="XMLDB file for Moodle local/scwgeneral"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="user_company_info" COMMENT="User company informations are available here">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="user_id" TYPE="int" LENGTH="11" NOTNULL="false" DEFAULT="0" SEQUENCE="false" COMMENT="user id"/>
+        <FIELD NAME="job_title" TYPE="char" LENGTH="300" NOTNULL="false" SEQUENCE="false" COMMENT="Job Title"/>
+        <FIELD NAME="company" TYPE="char" LENGTH="300" NOTNULL="false" SEQUENCE="false" COMMENT="company name"/>
+        <FIELD NAME="from_month" TYPE="char" LENGTH="20" NOTNULL="false" SEQUENCE="false" COMMENT="From month"/>
+        <FIELD NAME="from_year" TYPE="int" LENGTH="3" NOTNULL="false" SEQUENCE="false" COMMENT="From year"/>
+        <FIELD NAME="to_month" TYPE="char" LENGTH="20" NOTNULL="false" SEQUENCE="false" COMMENT="To month"/>
+        <FIELD NAME="to_year" TYPE="int" LENGTH="5" NOTNULL="false" SEQUENCE="false" COMMENT="To Year"/>
+        <FIELD NAME="currently_working" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Current working company"/>
+        <FIELD NAME="company_row" TYPE="int" LENGTH="11" NOTNULL="false" DEFAULT="0" SEQUENCE="false" COMMENT="Company Row"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="user_education_info" COMMENT="User education information">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="user_id" TYPE="int" LENGTH="11" NOTNULL="false" DEFAULT="0" SEQUENCE="false" COMMENT="User id"/>
+        <FIELD NAME="edu_institution" TYPE="char" LENGTH="300" NOTNULL="false" SEQUENCE="false" COMMENT="College or University"/>
+        <FIELD NAME="edu_city" TYPE="char" LENGTH="200" NOTNULL="false" SEQUENCE="false" COMMENT="Education city"/>
+        <FIELD NAME="edu_country" TYPE="char" LENGTH="200" NOTNULL="false" DEFAULT="UK" SEQUENCE="false"/>
+        <FIELD NAME="from_year" TYPE="int" LENGTH="5" NOTNULL="false" SEQUENCE="false" COMMENT="From Year"/>
+        <FIELD NAME="to_year" TYPE="int" LENGTH="5" NOTNULL="false" SEQUENCE="false" COMMENT="To Year"/>
+        <FIELD NAME="edu_row" TYPE="int" LENGTH="11" NOTNULL="false" DEFAULT="0" SEQUENCE="false" COMMENT="Education Row"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="user_details" COMMENT="User details table">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="profession" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false" COMMENT="user profession"/>
+        <FIELD NAME="organization" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false" COMMENT="organization"/>
+        <FIELD NAME="job_title" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false" COMMENT="Job Title"/>
+        <FIELD NAME="functional_area" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Functional area"/>
+        <FIELD NAME="functional_area_others" TYPE="char" LENGTH="250" NOTNULL="false" SEQUENCE="false" COMMENT="Functional Area Others"/>
+        <FIELD NAME="industry" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Industry"/>
+        <FIELD NAME="industry_others" TYPE="char" LENGTH="250" NOTNULL="false" SEQUENCE="false" COMMENT="Industry Others"/>
+        <FIELD NAME="payment_status" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false" COMMENT="Payment Status"/>
+        <FIELD NAME="amount" TYPE="number" LENGTH="4" NOTNULL="false" DEFAULT="0" SEQUENCE="false" DECIMALS="2"/>
+        <FIELD NAME="validity" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="approval_status" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false" COMMENT="Approval status"/>
+        <FIELD NAME="profile_pic" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="resume" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false" COMMENT="Resume"/>
+        <FIELD NAME="sniff_keyword" TYPE="char" LENGTH="1333" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="is_searchable" TYPE="int" LENGTH="4" NOTNULL="false" DEFAULT="1" SEQUENCE="false"/>
+        <FIELD NAME="summary" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="public_search" TYPE="int" LENGTH="4" NOTNULL="false" DEFAULT="1" SEQUENCE="false"/>
+        <FIELD NAME="random_url" TYPE="char" LENGTH="200" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="payment_url_status" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="password_url_status" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="payment_url_creation" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="payment_url_expiration" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="password_url_creation" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="password_url_expiration" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="user_id" TYPE="int" LENGTH="11" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="receive_newsletter" TYPE="int" LENGTH="4" NOTNULL="false" DEFAULT="1" SEQUENCE="false"/>
+        <FIELD NAME="receive_email" TYPE="int" LENGTH="4" NOTNULL="false" DEFAULT="1" SEQUENCE="false"/>
+        <FIELD NAME="no_company" TYPE="int" LENGTH="4" NOTNULL="false" DEFAULT="1" SEQUENCE="false" COMMENT="No of company"/>
+        <FIELD NAME="no_education" TYPE="int" LENGTH="4" NOTNULL="false" DEFAULT="1" SEQUENCE="false" COMMENT="No of education"/>
+        <FIELD NAME="awards_reg" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Awards or Recognitions"/>
+        <FIELD NAME="awards_reg_format" TYPE="int" LENGTH="2" NOTNULL="false" DEFAULT="0" SEQUENCE="false" COMMENT="Awards and Recognitions"/>
+        <FIELD NAME="web_url" TYPE="char" LENGTH="300" NOTNULL="false" SEQUENCE="false" COMMENT="Web site or blog url"/>
+        <FIELD NAME="linkedin_url" TYPE="char" LENGTH="300" NOTNULL="false" SEQUENCE="false" COMMENT="Linked in URL"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

@@ -1,0 +1,6 @@
+[29-Oct-2018 13:45:34 UTC] Default exception handler: A required parameter (section) was missing Debug: 
+Error code: missingparam
+* line 496 of /lib/setuplib.php: moodle_exception thrown
+* line 567 of /lib/moodlelib.php: call to print_error()
+* line 6 of /admin/settings.php: call to required_param()
+

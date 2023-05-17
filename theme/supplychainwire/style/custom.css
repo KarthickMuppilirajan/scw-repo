@@ -1,0 +1,23 @@
+.block_scw_interviews .content, .block_scw_videos .content, .block_scw_events .content{
+    background: #f4f3f3 none repeat scroll 0 0;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 3px 1px #828081;
+    clear: both;
+    margin: 0;
+    overflow: hidden;
+}
+.block .content {
+    overflow-wrap: normal;
+}
+
+img.req, img.smallicon{
+    width: auto;
+}
+
+.required img{
+    width: auto;
+}
+
+.block_scw_left_banner.block .content {
+    padding: 0;
+}

@@ -1,0 +1,38 @@
+[23-Mar-2017 16:07:15 UTC] PHP Warning:  POST Content-Length of 22395289 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[23-Mar-2017 16:10:28 UTC] Default exception handler: The uploaded file exceeds the upload_max_filesize directive in php.ini. Debug: 
+Error code: upload_error_ini_size
+* line 119 of /repository/upload/lib.php: moodle_exception thrown
+* line 63 of /repository/upload/lib.php: call to repository_upload->process_upload()
+* line 307 of /repository/repository_ajax.php: call to repository_upload->upload()
+
+[24-Mar-2017 12:23:37 UTC] Default exception handler: File filetype cannot be accepted. Debug: 
+Error code: invalidfiletype
+* line 144 of /repository/repository_ajax.php: moodle_exception thrown
+
+[18-Apr-2017 13:40:58 UTC] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2600 of /lib/moodlelib.php: require_login_exception thrown
+* line 34 of /repository/draftfiles_ajax.php: call to require_login()
+
+[03-Mar-2020 08:05:25 UTC] PHP Warning:  POST Content-Length of 66555655 bytes exceeds the limit of 25165824 bytes in Unknown on line 0
+[03-Mar-2020 08:15:46 UTC] PHP Warning:  POST Content-Length of 43644709 bytes exceeds the limit of 25165824 bytes in Unknown on line 0
+[03-Mar-2020 08:19:58 UTC] Default exception handler: Video file (MP4) filetype cannot be accepted. Debug: 
+Error code: invalidfiletype
+* line 185 of /repository/upload/lib.php: moodle_exception thrown
+* line 63 of /repository/upload/lib.php: call to repository_upload->process_upload()
+* line 307 of /repository/repository_ajax.php: call to repository_upload->upload()
+
+[03-Mar-2020 08:21:05 UTC] Default exception handler: Video file (MP4) filetype cannot be accepted. Debug: 
+Error code: invalidfiletype
+* line 185 of /repository/upload/lib.php: moodle_exception thrown
+* line 63 of /repository/upload/lib.php: call to repository_upload->process_upload()
+* line 307 of /repository/repository_ajax.php: call to repository_upload->upload()
+
+[03-Mar-2020 08:23:43 UTC] Default exception handler: Video file (MP4) filetype cannot be accepted. Debug: 
+Error code: invalidfiletype
+* line 185 of /repository/upload/lib.php: moodle_exception thrown
+* line 63 of /repository/upload/lib.php: call to repository_upload->process_upload()
+* line 307 of /repository/repository_ajax.php: call to repository_upload->upload()
+
+[03-Mar-2020 11:58:25 UTC] PHP Warning:  POST Content-Length of 66562285 bytes exceeds the limit of 25165824 bytes in Unknown on line 0
+[03-Mar-2020 12:35:37 UTC] PHP Warning:  POST Content-Length of 49416666 bytes exceeds the limit of 25165824 bytes in Unknown on line 0

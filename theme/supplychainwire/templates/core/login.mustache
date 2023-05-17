@@ -1,0 +1,148 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template core/login
+
+    Moodle template for the login page.
+
+    Example context (json):
+    {
+        "autofocusform": false,
+        "canloginasguest": true,
+        "canloginbyemail": true,
+        "cansignup": true,
+        "error": "testerror",
+        "errorformatted": "Test error formatted",
+        "forgotpasswordurl": "http://example.com/login/forgot_password.php",
+        "hasidentityproviders": false,
+        "hasinstructions": true,
+        "instructions": "For full access to this site, you first need to create an account.",
+        "loginurl": "http://example.com/stable_master/login/index.php",
+        "rememberusername": true,
+        "passwordautocomplete": false,
+        "signupurl": "http://localhost/stable_master/login/signup.php",
+        "cookieshelpiconformatted": "",
+        "username": ""
+    }
+}}
+<div class="login-blk">
+{{#hasinstructions}}
+<div class="loginbox clearfix twocolumns scwloginarea-blk">
+{{/hasinstructions}}
+{{^hasinstructions}}
+<div class="loginbox clearfix onecolumn">
+{{/hasinstructions}}
+
+    <div class="loginpanel">
+        {{#cansignup}}
+            <div class="skiplinks">
+                <a class="skip" href="{{signupurl}}">{{#str}} tocreatenewaccount {{/str}}</a>
+            </div>
+        {{/cansignup}}
+
+        <h4><i class="fa fa-users"></i>LOG IN</h4>
+
+        <div class="subcontent loginsub">
+            {{#error}}
+                <div class="loginerrors col-sm-offset-2">
+                    <a href="#" id="loginerrormessage" class="accesshide">{{error}}</a>
+                    {{{errorformatted}}}
+                </div>
+            {{/error}}
+            <form action="{{loginurl}}" class="form-horizontal mform" method="post" id="login" {{^passwordautocomplete}}autocomplete="off"{{/passwordautocomplete}}>			
+                <div class="loginform">
+				
+				<div class="form-group"> 
+				<label for="username" class="col-sm-2 control-label">
+				    Email
+				</label>
+					<div class="col-sm-10">
+					  <span id="id_error_username" class="error hide" tabindex="0"> Required</span>
+					  <br class="error hide" id="id_error_break_username">
+					  <input type="text" class="form-control" placeholder="Email" name="username" id="username" size="15" value="{{email}}">
+					</div>
+				</div>
+				
+				<div class="form-group"> 
+				<label for="password" class="col-sm-2 control-label">
+				    {{#str}} password {{/str}}
+				</label>
+					<div class="col-sm-10">
+					  <span id="id_error_password" class="error hide" tabindex="0">Required</span>
+					  <br class="error hide" id="id_error_break_password">
+					  <input class="form-control" type="password" name="password" placeholder="Password" id="password" size="15" value="" {{^passwordautocomplete}}autocomplete="off"{{/passwordautocomplete}}> 
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<div class="checkbox">
+				<label for="rememberusername"><input type="checkbox" name="rememberusername" id="rememberusername" value="1" {{#username}}checked="checked"{{/username}} /> Remember me </label>
+						</div>
+						<a href="{{forgotpasswordurl}}">Forgot password?</a>
+					</div>
+				</div>
+				<div class="form-group"> <div class="col-sm-offset-2 col-sm-10"> Not Registered? <a href="{{signupurl}}">Sign Up</a> Here <button type="submit" id="loginbtn" class="btn btn-brown">LOG IN</button> </div> </div>
+                    
+                </div>
+
+				<input id="anchor" type="hidden" name="anchor" value="" />
+                <script>document.getElementById('anchor').value = location.hash;</script>
+            </form>
+
+        </div>
+
+    </div>
+
+    {{#hasidentityproviders}}
+        <div class="subcontent potentialidps">
+            <h6>{{#str}} potentialidps, auth {{/str}}</h6>
+            <div class="potentialidplist">
+                {{#identityproviders}}
+                    <div class="potentialidp">
+                        <a href="{{url}}" title={{#quote}}{{name}}{{/quote}}>
+                            {{#icon}}
+                                {{>core/pix_icon}}
+                            {{/icon}}
+                            {{name}}
+                        </a>
+                    </div>
+                {{/identityproviders}}
+            </div>
+        </div>
+    {{/hasidentityproviders}}
+</div>
+
+</div>
+
+
+{{#js}}
+    require(['jquery', 'core/yui'], function($, Y) {
+    {{#error}}
+        $(function() {
+            M.util.focus_login_error(Y);
+        });
+    {{/error}}
+    {{^error}}
+        {{#autofocusform}}
+            $(function() {
+                M.util.focus_login_form(Y);
+            });
+        {{/autofocusform}}
+    {{/error}}
+    });
+{{/js}}

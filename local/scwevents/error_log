@@ -1,0 +1,22 @@
+[07-Apr-2017 08:17:20 UTC] Default exception handler: Error reading from database Debug: Unknown column 'a.id' in 'order clause'
+SELECT * FROM scwxm_local_scwevents WHERE   event_delete = ?  ORDER BY a.id ASC LIMIT 0, 10
+[array (
+  0 => '0',
+)]
+Error code: dmlreadexception
+* line 479 of /lib/dml/moodle_database.php: dml_read_exception thrown
+* line 1094 of /lib/dml/mysqli_native_moodle_database.php: call to moodle_database->query_end()
+* line 135 of /local/scwevents/renderer.php: call to mysqli_native_moodle_database->get_records_sql()
+* line 97 of /local/scwevents/admin.php: call to local_scwevents_renderer->event_list()
+
+[07-Apr-2017 08:17:29 UTC] Default exception handler: Error reading from database Debug: Unknown column 'a.id' in 'order clause'
+SELECT * FROM scwxm_local_scwevents WHERE   event_delete = ?  ORDER BY a.id ASC LIMIT 0, 10
+[array (
+  0 => '0',
+)]
+Error code: dmlreadexception
+* line 479 of /lib/dml/moodle_database.php: dml_read_exception thrown
+* line 1094 of /lib/dml/mysqli_native_moodle_database.php: call to moodle_database->query_end()
+* line 135 of /local/scwevents/renderer.php: call to mysqli_native_moodle_database->get_records_sql()
+* line 97 of /local/scwevents/admin.php: call to local_scwevents_renderer->event_list()
+

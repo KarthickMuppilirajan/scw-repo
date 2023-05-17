@@ -1,0 +1,56 @@
+[01-Apr-2017 12:36:20 UTC] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2600 of /lib/moodlelib.php: require_login_exception thrown
+* line 31 of /login/approve.php: call to require_login()
+
+[25-Apr-2017 15:09:21 UTC] Default exception handler: A required parameter (username) was missing Debug: 
+Error code: missingparam
+* line 496 of /lib/setuplib.php: moodle_exception thrown
+* line 567 of /lib/moodlelib.php: call to print_error()
+* line 34 of /login/token.php: call to required_param()
+
+[25-Apr-2017 18:17:20 UTC] Default exception handler: A required parameter (username) was missing Debug: 
+Error code: missingparam
+* line 496 of /lib/setuplib.php: moodle_exception thrown
+* line 567 of /lib/moodlelib.php: call to print_error()
+* line 34 of /login/token.php: call to required_param()
+
+[25-Apr-2017 21:32:00 UTC] Default exception handler: A required parameter (username) was missing Debug: 
+Error code: missingparam
+* line 496 of /lib/setuplib.php: moodle_exception thrown
+* line 567 of /lib/moodlelib.php: call to print_error()
+* line 34 of /login/token.php: call to required_param()
+
+[05-May-2017 11:43:23 UTC] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2600 of /lib/moodlelib.php: require_login_exception thrown
+* line 29 of /login/scwuser.php: call to require_login()
+
+[19-Nov-2019 07:38:55 UTC] Default exception handler: Cannot use LDAP authentication. The PHP LDAP module is not installed. Debug: 
+Error code: auth_ldapnotinstalled
+* line 496 of /lib/setuplib.php: moodle_exception thrown
+* line 150 of /auth/ldap/auth.php: call to print_error()
+* line 4301 of /lib/moodlelib.php: call to auth_plugin_ldap->user_login()
+* line 154 of /login/index.php: call to authenticate_user_login()
+
+[19-Nov-2019 07:44:55 UTC] Default exception handler: Cannot use LDAP authentication. The PHP LDAP module is not installed. Debug: 
+Error code: auth_ldapnotinstalled
+* line 496 of /lib/setuplib.php: moodle_exception thrown
+* line 150 of /auth/ldap/auth.php: call to print_error()
+* line 4301 of /lib/moodlelib.php: call to auth_plugin_ldap->user_login()
+* line 154 of /login/index.php: call to authenticate_user_login()
+
+[19-Nov-2019 08:02:30 UTC] Default exception handler: Cannot use LDAP authentication. The PHP LDAP module is not installed. Debug: 
+Error code: auth_ldapnotinstalled
+* line 496 of /lib/setuplib.php: moodle_exception thrown
+* line 150 of /auth/ldap/auth.php: call to print_error()
+* line 4301 of /lib/moodlelib.php: call to auth_plugin_ldap->user_login()
+* line 154 of /login/index.php: call to authenticate_user_login()
+
+[03-Mar-2020 11:29:46 UTC] Default exception handler: Cannot use LDAP authentication. The PHP LDAP module is not installed. Debug: 
+Error code: auth_ldapnotinstalled
+* line 496 of /lib/setuplib.php: moodle_exception thrown
+* line 150 of /auth/ldap/auth.php: call to print_error()
+* line 4301 of /lib/moodlelib.php: call to auth_plugin_ldap->user_login()
+* line 154 of /login/index.php: call to authenticate_user_login()
+

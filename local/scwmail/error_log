@@ -1,0 +1,2 @@
+[10-Apr-2017 12:34:08 UTC] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 196608 bytes) in /home/blabs321/public_html/scw/lib/setup.php on line 722
+[17-Apr-2017 12:13:45 UTC] Cannot find session record ccc77128497bd62b2771f2710798d650 for user 59, creating new session.

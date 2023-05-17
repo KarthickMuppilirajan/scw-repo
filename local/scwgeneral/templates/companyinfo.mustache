@@ -1,0 +1,27 @@
+<div class="form-group">
+ <label for="" class="col-sm-4 col-lg-2 control-label">Company Info:</label>
+ <div class="col-sm-8 col-lg-10 no-overflow">
+  <table class="admintable generaltable">
+   <thead>
+    <tr>
+     <th>Job Title</th>
+     <th>Company</th>
+     <th>From</th>
+     <th>To</th>
+     <th>Current Status</th>
+    </tr>
+   </thead>
+   <tbody>
+     {{#companyinfo}}
+     <tr>
+      <td>{{job}}</td>
+	  <td>{{cname}}</td>
+	  <td>{{from}}</td>
+	  <td>{{to}}</td>
+	  <td>{{current}}</td>
+     </tr>
+     {{/companyinfo}}   
+    </tbody>
+  </table>
+ </div>
+</div>

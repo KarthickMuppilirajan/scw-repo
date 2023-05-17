@@ -1,0 +1,34 @@
+[11-Apr-2017 05:51:23 UTC] Cannot find session record 30ff25f215186d76a39054d0b486ed59 for user 2, creating new session.
+[17-Apr-2017 12:13:45 UTC] Cannot find session record ccc77128497bd62b2771f2710798d650 for user 59, creating new session.
+[13-May-2017 11:48:24 UTC] PHP Fatal error:  Out of memory (allocated 4980736) (tried to allocate 49152 bytes) in /home/blabs321/public_html/scw/lib/navigationlib.php on line 2575
+[13-Sep-2018 11:48:15 UTC] Default exception handler: Error reading from database Debug: MySQL server has gone away
+SELECT * FROM scwxm_capabilities
+[array (
+)]
+Error code: dmlreadexception
+* line 479 of /lib/dml/moodle_database.php: dml_read_exception thrown
+* line 1033 of /lib/dml/mysqli_native_moodle_database.php: call to moodle_database->query_end()
+* line 1274 of /lib/dml/moodle_database.php: call to mysqli_native_moodle_database->get_recordset_sql()
+* line 1222 of /lib/dml/moodle_database.php: call to moodle_database->get_recordset_select()
+* line 2647 of /lib/accesslib.php: call to moodle_database->get_recordset()
+* line 2629 of /lib/accesslib.php: call to get_all_capabilities()
+* line 390 of /lib/accesslib.php: call to get_capability_info()
+* line 518 of /lib/accesslib.php: call to has_capability()
+* line 3728 of /course/lib.php: call to has_any_capability()
+* line 2724 of /lib/navigationlib.php: call to course_get_user_navigation_options()
+* line 1226 of /lib/navigationlib.php: call to global_navigation->add_front_page_course_essentials()
+* line 224 of /blocks/navigation/block_navigation.php: call to global_navigation->initialise()
+* line 166 of /blocks/navigation/block_navigation.php: call to block_navigation->get_navigation()
+* line 288 of /blocks/moodleblock.class.php: call to block_navigation->get_content()
+* line 230 of /blocks/moodleblock.class.php: call to block_base->formatted_contents()
+* line 1181 of /lib/blocklib.php: call to block_base->get_content_for_output()
+* line 1233 of /lib/blocklib.php: call to block_manager->create_block_contents()
+* line 356 of /lib/blocklib.php: call to block_manager->ensure_content_created()
+* line 17 of /theme/supplychainwire/layout/scwpage.php: call to block_manager->region_has_content()
+* line 1110 of /lib/outputrenderers.php: call to include()
+* line 1040 of /lib/outputrenderers.php: call to core_renderer->render_page_layout()
+* line ? of unknownfile: call to core_renderer->header()
+* line 1827 of /lib/setuplib.php: call to call_user_func_array()
+* line 52 of /local/mylinks/search.php: call to bootstrap_renderer->__call()
+* line 52 of /local/mylinks/search.php: call to bootstrap_renderer->header()
+

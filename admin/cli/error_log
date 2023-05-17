@@ -1,0 +1,5 @@
+[29-Apr-2017 12:55:02 UTC] PHP Fatal error:  Out of memory (allocated 50855936) (tried to allocate 3072 bytes) in /home/blabs321/public_html/scw/course/format/weeks/lib.php on line 53
+[29-Apr-2017 12:56:02 UTC] PHP Fatal error:  Out of memory (allocated 33292288) (tried to allocate 3072 bytes) in /home/blabs321/public_html/scw/lib/formslib.php on line 677
+[29-Apr-2017 13:08:02 UTC] PHP Fatal error:  Out of memory (allocated 28311552) (tried to allocate 3072 bytes) in /home/blabs321/public_html/scw/lib/filestorage/stored_file.php on line 70
+[11-May-2017 10:52:02 UTC] PHP Warning:  Unterminated comment starting line 7700 in /home/blabs321/public_html/scw/lib/moodlelib.php on line 7700
+[11-May-2017 10:52:02 UTC] PHP Fatal error:  Call to undefined function setup_lang_from_browser() in /home/blabs321/public_html/scw/lib/setup.php on line 873

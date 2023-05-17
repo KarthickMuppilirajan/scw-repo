@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/scwbanner/db" VERSION="20170320" COMMENT="XMLDB file for Moodle local/scwvideos"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_scwvideos" COMMENT="Default comment for local_scwvideos, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="video_heading" TYPE="char" LENGTH="300" NOTNULL="false" SEQUENCE="false" COMMENT="This is video heading. It is optional."/>
+        <FIELD NAME="video_description" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="This is video description. It is optional."/>
+        <FIELD NAME="video_thumb" TYPE="char" LENGTH="300" NOTNULL="false" SEQUENCE="false" COMMENT="This is video thumb image."/>
+        <FIELD NAME="video_content" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Video Content"/>
+        <FIELD NAME="video_contentformat" TYPE="int" LENGTH="4" NOTNULL="false" DEFAULT="1" SEQUENCE="false" COMMENT="Video Content Format"/>
+        <FIELD NAME="video_porder" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This is Video Preference Order."/>
+        <FIELD NAME="video_share" TYPE="int" LENGTH="3" NOTNULL="false" DEFAULT="1" SEQUENCE="false" COMMENT="This is Video share. Its hold video is active or deactive.If 0 deactive, 1 active."/>
+        <FIELD NAME="video_status" TYPE="int" LENGTH="3" NOTNULL="false" DEFAULT="1" SEQUENCE="false" COMMENT="This is Video status. Its hold video is active or deactive.If 0 deactive, 1 active."/>
+        <FIELD NAME="video_created" TYPE="int" LENGTH="13" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field show when was create video."/>
+        <FIELD NAME="video_modified" TYPE="int" LENGTH="13" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field show when was modify video."/>
+        <FIELD NAME="video_created_by" TYPE="int" LENGTH="13" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field show who were create video."/>
+        <FIELD NAME="video_modified_by" TYPE="int" LENGTH="13" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field show who were modify video."/>
+        <FIELD NAME="video_delete" TYPE="int" LENGTH="3" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field maintain which records are soft delete or active records. If 0 Active, 1 Delete"/>
+        <FIELD NAME="video_preview" TYPE="int" LENGTH="3" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="This field maintain which records are soft delete or active records. If 0 Active, 1 Delete"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

@@ -1,0 +1,193 @@
+.panel-default > .panel-heading,
+.box.message table td.heading,
+.box.message .messagearea .messagerecent .singlemessage .otheruser,
+.block .header,
+#dockeditempanel .dockeditempanel_hd
+{
+    background-color: #560c25;
+}
+
+.block .header h2 {
+    color: #fff;	
+}
+
+.block{
+	padding: 0px 0px 8px 0px;
+	background-color: none;
+}
+
+.dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+    right: 0;
+}
+.dir-ltr.editing.used-region-side-post.used-region-side-pre #block-region-side-pre {
+    right: 0;
+}
+/*--siva style--*/
+.scw-sections input[id$='_clearbutton'], .scw-sections input[type='reset']
+{
+	border-color:#bbb9ba;
+}
+.scw-sections .block .content
+{
+	padding:0px;
+}
+.scw-sections .block .header
+{
+	padding:15px;
+}
+.scw-sections .block
+{
+	padding:0;
+}
+.scw-sections .login-blk .loginbox .loginpanel, .scw-sections .signup-blk
+{
+	margin:20px auto;
+	float:none;
+	width:53%;
+	color:#000;
+}
+.scw-sections .login-blk .loginbox .loginpanel
+{
+	padding:0 10px;
+}
+.scw-sections .login-blk .loginbox .loginsub .loginerrors
+{
+	margin-bottom:10px;
+	color:#dc0606;
+}
+.scw-sections .login-blk .loginbox a, .scw-sections .signup-blk .mform .term-policlink a
+{
+	color:#0e37e9;
+}
+.scw-sections .login-blk .loginbox .loginform .form-group .checkbox input[type="checkbox"]
+{
+	margin:2px 0 0 -20px;
+}
+.scw-sections .login-blk .loginbox .loginform .form-group .form-control, .scw-sections .signup-blk .mform .fitem .ftext .textfield, .scw-sections .signup-blk .mform .fitem .fselect select, .scw-sections .login-blk .loginbox .mform .fcontainer .fitem .felement > input[type="text"], .scw-sections .login-blk .loginbox .mform .fcontainer .fitem .felement > input[type="password"]
+{
+	width:100%;
+	max-width:500px;
+	background:#f5f5f5;
+}
+.scw-sections .login-blk .loginbox .loginsub form fieldset .ftext .text-ltr
+{
+	width:100%;
+	background:#f5f5f5;
+}
+.scw-sections .login-blk .loginbox .loginform .form-group .control-label, .scw-sections .signup-blk .mform .fitemtitle label
+{
+	font-size:14px;
+	color:#000;
+	font-weight:normal;
+}
+.scw-sections .login-blk .loginbox .loginform .login-blk .loginform button.btn
+{
+	float:right;
+	margin-right:30px;
+}
+.scw-sections .login-blk .loginbox .loginform .login-error
+{
+	color:#dc0606;
+}
+.scw-sections .loginbox.twocolumns .loginpanel, .scw-sections .signup-blk
+{
+	background:#f4f3f3;
+	border:1px solid #fff;
+	box-shadow:0 2px 3px 0px #828081;
+	clear:both;
+	overflow:hidden;
+	border-radius:5px;
+}
+.scw-sections .signup-blk
+{
+	padding:0 10px;
+}
+.scw-sections .signup-blk .mform .fitemtitle
+{
+	width:23%;
+}
+.scw-sections .signup-blk .mform .term-policlink
+{
+	margin-left:24%;
+}
+.scw-sections .signup-blk .mform .fitem_actionbuttons > div.felement
+{
+	width:29%;
+	float:right;	
+}
+.scw-sections article .generalbox
+{
+	background:#f4f3f3 none repeat scroll 0 0;
+	padding:10px;
+	margin:20px auto !important;
+	width:60%;
+}
+.fitemtitle label{
+	font-weight:normal;
+}
+.scw-sections .well
+{
+	margin:20px 0 0 0;
+}
+.scw-sections .alert-info
+{
+	margin-top:20px;
+}
+.scw-sections .well a img
+{
+	float:left;
+	margin:0 15px 10px 0px;
+}
+.scw-sections .well h3, .scw-sections .well h6
+{
+	margin-bottom:5px;
+}
+.scw-sections .fdescription{
+    display:none;
+}
+.scw-sections .companyinfo-box, .educationinfo-box{
+    background-color:#fff;
+	padding: 20px;
+	border:1px solid #ddd;
+	margin:20px;
+	border-radius:6px;
+}
+.scw-sections .companyinfo-box h5, .scw-sections .educationinfo-box h5{
+    color: #560c25;
+}
+.scw-sections .btn-addmore, .scw-sections .btn-remove, .scw-sections .btn-remove1{
+	background-color: #000 !important;
+	color: #fff !important;
+}
+.scw-sections .addthis_inline_share_toolbox
+{
+	clear: both;
+	float: right;
+	margin: 10px 0;
+	display:none;
+}
+.scw-sections .newsletter-blk .fitemtitle
+{
+	width:25%;
+}
+#page-user-editprofile .mform .felement label
+{
+	display:inline;
+}
+.scw-sections .signup-blk .fitem_fgroup .btn-ash
+{
+	margin-left:0;
+}
+.newsletter-blk .fitem_fgroup  .mform .fitem_actionbuttons > div.felement
+{
+	margin-left:24%;
+}
+#page-login-deactivate .mform .fitem_ftextarea .felement
+{
+	width:82%;
+	margin:auto 120px;
+}
+#page-login-deactivate .mform .fitem_actionbuttons > div.felement
+{
+	margin-left:115px;
+}

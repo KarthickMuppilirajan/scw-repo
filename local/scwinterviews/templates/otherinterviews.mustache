@@ -1,0 +1,34 @@
+{{#avvideos}}
+<div class="otherintervw-sliderblk">
+<h4>OTHER INTERVIEWS</h4>
+<div class="otherintervw-sliderblk-contain">
+  <div class='row'>
+    <div class='col-sm-12 col-md-12 col-md-12 col-lg-12'>
+      <div class="carousel slide media-carousel" id="media">
+        <div class="carousel-inner">
+          {{#fvideos}}
+		   <div class="{{clstxt}}">
+            <div class="row">
+			  {{#videos}}
+             <div class="col-lg-3">
+              <div class="otherintervw-innerslidr">
+              <a href = "{{videourl}}"><h6>{{interview_heading}}</h6></a>
+               <img src="{{imgurl}}"/>  
+              <p>{{summary}}...</p>
+              </div>               
+              </div>          
+			  {{/videos}}
+            </div>
+          </div>
+		  {{/fvideos}}
+        </div>
+		{{#carousel}}
+        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#media" class="right carousel-control">›</a>
+		{{/carousel}}
+      </div>                          
+    </div>
+  </div>
+</div>
+</div>
+{{/avvideos}}

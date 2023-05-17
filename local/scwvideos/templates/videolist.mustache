@@ -1,0 +1,38 @@
+{{#availablevideo}}
+<div class="eventlist-blk">
+<h4><i class="fa fa-video-camera"></i>VIDEOS</h4>
+<div class="videos-lst">
+ <div class="row clearfix">
+{{#videos}}
+  <div class="col-lg-4">
+	<div class="videoplyr">
+	<a href="{{{videourl}}}"> <div style="background:url('{{{videothumb}}}') no-repeat center center / cover;height:260px;"> <div class="bgimg-icon">
+<i class="fa fa-play-circle"></i>
+</div> </div></a>
+	  <div class="video-desc">{{videodescription}}</div>
+	</div>
+   </div>
+{{/videos}}
+</div>
+</div>
+
+<div class="searchreslt-pagination">
+{{{paging}}}
+</div>
+
+</div>
+{{/availablevideo}}
+{{^availablevideo}}
+<div class="eventlist-blk">
+<h4><i class="fa fa-video-camera"></i>VIDEOS</h4>
+<div class="videos-lst">
+ <div class="row clearfix">
+
+<div class="alert alert-info">
+  <strong>No Videos Found.</strong>
+</div>
+<br/>
+</div>
+</div>
+</div>
+{{/availablevideo}}

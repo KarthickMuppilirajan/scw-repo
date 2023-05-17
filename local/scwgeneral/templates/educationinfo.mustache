@@ -1,0 +1,27 @@
+<div class="form-group">
+ <label for="" class="col-sm-4 col-lg-2 control-label">Education:</label>
+ <div class="col-sm-8 col-lg-10 no-overflow">
+  <table class="admintable generaltable">
+   <thead>
+    <tr>
+     <th>College/University</th>
+     <th>City</th>
+	 <th>Country</th>
+     <th>From</th>
+     <th>To</th>
+    </tr>
+   </thead>
+   <tbody>
+     {{#educationinfo}}
+     <tr>
+      <td>{{institution}}</td>
+	  <td>{{city}}</td>
+	  <td>{{country}}</td>
+	  <td>{{from}}</td>
+	  <td>{{to}}</td>
+     </tr>
+     {{/educationinfo}}   
+    </tbody>
+  </table>
+ </div>
+</div>
